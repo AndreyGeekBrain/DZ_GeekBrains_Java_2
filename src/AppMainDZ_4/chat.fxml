@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox alignment="center" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppMainDZ_4.Controller">
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10"/>
+    </padding>
+    <TextArea promptText="Ваше сообщение" focusTraversable="false" VBox.vgrow="ALWAYS" fx:id="chatWindows"/>
+    <HBox>
+        <padding>
+            <Insets top="10" bottom="0" left="0" right="0"/>
+        </padding>
+        <TextField HBox.hgrow="ALWAYS" fx:id="mainTextField" onAction="#truChat"/>
+        <Button   text="Отправить" fx:id="chatButton" onAction="#truChat"/>
+
+    </HBox>
+</VBox>
